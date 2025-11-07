@@ -1,0 +1,23 @@
+# Planet parameters for TOI-2322 b
+
+planet_name: TOI-2322b
+
+# Orbital parameters
+period: 11.30717      # Orbital period [days]
+t0: 0.0               # Time of inferior conjunction [days]
+a: 22.0               # Semi-major axis [stellar radii] (approx. from 0.0924 AU)
+inc: 89.57            # Inclination [deg]
+ecc: 0.0              # Orbital eccentricity
+w: 90.0               # Argument of periastron [deg]
+
+# Planet size
+r_planet: 0.009       # Planet radius in stellar radii (approx. from 0.08868 RJ)
+
+# Limb darkening
+limb_dark: quadratic  # Limb darkening law
+u: [0.1, 0.3]         # Limb darkening coefficients
+
+# Time grid for simulation
+time_start: -0.05     # Start time relative to mid-transit [days]
+time_end: 0.05        # End time relative to mid-transit [days]
+time_steps: 1000      # Number of time samples
