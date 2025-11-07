@@ -1,0 +1,29 @@
+docker ps
+docker exec -it -id code- /bin/bash
+
+GIT
+
+git status #Shows the status of the repository
+
+git fetch ca25_remote #Downloads data from the (professor) remote without modifying your files
+git pull origin main #Downloads and integrates changes from the remote origin
+git push origin main #Uploads your local commits to GitHub
+
+git add <file> #Stages a file for commit
+git commit -m "message" #Saves the changes with a descriptive message (in your local memory, to sent to Git you need to push)
+
+
+BRANCH
+git branch    # list of existing branch
+git checkout assignment1_taskC   #To go inside branch (like a folder with a copy of all your file in main)
+
+
+FILE
+
+touch <file_name.txt>    #create a file 
+echo "text" > <file_name.txt>   # Write text (overwrites existing content)
+
+echo "New text" >> <file_name.txt>   # Append text (adds to existing content)
+cat <file_name.txt>          #read file
+
+

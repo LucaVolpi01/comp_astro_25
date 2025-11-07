@@ -1,3 +1,7 @@
+ASSIGMENT OVERLEAF LINK:
+https://it.overleaf.com/4693284112hzjgmcjqfggk#18f828
+
+
 # Daneel
 
 A practical example to detect and characterize exoplanets.
