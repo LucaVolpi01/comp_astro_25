@@ -40,7 +40,7 @@ def transit(args, planet_name):
     m = batman.TransitModel(params, t)	        #initializes model    
     flux_double = m.light_curve(params)
 
-    params.rp = params.rp *0.5
+    params.rp = params.rp *0.25
 
     m = batman.TransitModel(params, t)	        #initializes model    
     flux_half = m.light_curve(params)
