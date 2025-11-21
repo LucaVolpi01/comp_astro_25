@@ -30,23 +30,39 @@ def transit(args, planet_name):
     params.planet_name= args['planet_name']
 
     
-    t = np.linspace(-0.2, 0.2, 1000)
+    t = np.linspace(-0.06, 0.06, 1000)
     
-    m = batman.TransitModel(params, t)	        #initializes model
-    flux = m.light_curve(params)
+    m = batman.TransitModel(params, t)	        #initializes model    
+    flux_normal = m.light_curve(params)
+    
+    params.rp = params.rp *2
+
+    m = batman.TransitModel(params, t)	        #initializes model    
+    flux_double = m.light_curve(params)
+
+    params.rp = params.rp *0.25
+
+    m = batman.TransitModel(params, t)	        #initializes model    
+    flux_half = m.light_curve(params)
+
+    
+    
 
 
     #### ######  ###### PLOT ###### ###### ######
     
     plt.figure(figsize=(10, 6))
-    plt.plot(t, flux)
+
     plt.title(f"{planet_name}_light_curve.png")
     
     plt.grid()
     plt.xlabel("Time [days]")
     plt.ylabel("Relative flux")
    
-    plt.plot(t, flux, label="Transit model")
+    plt.plot(t, flux_normal, label="Transit model")
+    plt.plot(t, flux_double, label="Transit model double radius")
+    plt.plot(t, flux_half, label="Transit model half radius")
+    
     plt.legend()
     
     
@@ -54,7 +70,7 @@ def transit(args, planet_name):
     plt.show()
 
 
-planets_target = ["TOI-2322_b" ]
+planets_target = ["TOI-6158_b" ]
 
 
 for n, p in enumerate(planets_target):
