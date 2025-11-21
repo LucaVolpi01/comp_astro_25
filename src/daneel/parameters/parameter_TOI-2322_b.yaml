@@ -11,7 +11,7 @@ ecc: 0.0              # Orbital eccentricity
 w: 90.0               # Argument of periastron [deg]
 
 # Planet size
-r_planet: 0.009       # Planet radius in stellar radii (approx. from 0.08868 RJ)
+r_planet: 0.009      # Planet radius in stellar radii (approx. from 0.08868 RJ)
 
 # Limb darkening
 limb_dark: quadratic  # Limb darkening law
