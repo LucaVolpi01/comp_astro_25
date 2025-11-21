@@ -1,0 +1,17 @@
+# Planet parameters for TOI-6158 b
+
+planet_name: TOI-6158b
+
+# Orbital parameters
+period: 3.0446899      # Orbital period [days]
+t0: 0.0               # Time of inferior conjunction [days]
+a: 14.78115660954045               # Semi-major axis [stellar radii] (approx. from 0.0924 AU)
+inc: 86.51            # Inclination [deg]
+ecc: 0.059              # Orbital eccentricity
+w: 88.               # Argument of periastron [deg]
+
+# Planet size
+r_planet: 0.1961553541771708      # Planet radius in stellar radii (approx. from 0.08868 RJ)
+
+# Limb darkening
+limb_dark: quadratic  # Limb darkening law
