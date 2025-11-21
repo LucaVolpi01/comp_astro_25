@@ -1,0 +1,192 @@
+Experiment 1:
+  n_estimators: 20
+  max_depth: None
+  True negative: 69
+  True positive: 92
+  False negative: 2
+  False positive: 26
+  Accuracy: 0.8518518518518519
+  optimal_threshold: 0.35
+  average_precision: 0.8614752191540614
+  oob_score: 0.7442857142857143
+----------------------------------------
+Experiment 2:
+  n_estimators: 20
+  max_depth: 5
+  True negative: 73
+  True positive: 89
+  False negative: 5
+  False positive: 22
+  Accuracy: 0.8571428571428571
+  optimal_threshold: 0.4557687366650459
+  average_precision: 0.8526649238571707
+  oob_score: 0.7614285714285715
+----------------------------------------
+Experiment 3:
+  n_estimators: 20
+  max_depth: 10
+  True negative: 71
+  True positive: 92
+  False negative: 2
+  False positive: 24
+  Accuracy: 0.8624338624338624
+  optimal_threshold: 0.35
+  average_precision: 0.7927683300603418
+  oob_score: 0.7242857142857143
+----------------------------------------
+Experiment 4:
+  n_estimators: 20
+  max_depth: 15
+  True negative: 69
+  True positive: 92
+  False negative: 2
+  False positive: 26
+  Accuracy: 0.8518518518518519
+  optimal_threshold: 0.35
+  average_precision: 0.8614752191540614
+  oob_score: 0.7442857142857143
+----------------------------------------
+Experiment 5:
+  n_estimators: 50
+  max_depth: None
+  True negative: 75
+  True positive: 89
+  False negative: 5
+  False positive: 20
+  Accuracy: 0.8677248677248677
+  optimal_threshold: 0.5
+  average_precision: 0.8788163459769359
+  oob_score: 0.7971428571428572
+----------------------------------------
+Experiment 6:
+  n_estimators: 50
+  max_depth: 5
+  True negative: 73
+  True positive: 88
+  False negative: 6
+  False positive: 22
+  Accuracy: 0.8518518518518519
+  optimal_threshold: 0.4275830130564591
+  average_precision: 0.8743611334207904
+  oob_score: 0.7857142857142857
+----------------------------------------
+Experiment 7:
+  n_estimators: 50
+  max_depth: 10
+  True negative: 73
+  True positive: 91
+  False negative: 3
+  False positive: 22
+  Accuracy: 0.8677248677248677
+  optimal_threshold: 0.4
+  average_precision: 0.8288366619706204
+  oob_score: 0.77
+----------------------------------------
+Experiment 8:
+  n_estimators: 50
+  max_depth: 15
+  True negative: 75
+  True positive: 89
+  False negative: 5
+  False positive: 20
+  Accuracy: 0.8677248677248677
+  optimal_threshold: 0.5
+  average_precision: 0.8775958202957128
+  oob_score: 0.8
+----------------------------------------
+Experiment 9:
+  n_estimators: 100
+  max_depth: None
+  True negative: 73
+  True positive: 91
+  False negative: 3
+  False positive: 22
+  Accuracy: 0.8677248677248677
+  optimal_threshold: 0.41
+  average_precision: 0.8942269763239127
+  oob_score: 0.8057142857142857
+----------------------------------------
+Experiment 10:
+  n_estimators: 100
+  max_depth: 5
+  True negative: 74
+  True positive: 88
+  False negative: 6
+  False positive: 21
+  Accuracy: 0.8571428571428571
+  optimal_threshold: 0.5033725455217319
+  average_precision: 0.8761125127508363
+  oob_score: 0.7985714285714286
+----------------------------------------
+Experiment 11:
+  n_estimators: 100
+  max_depth: 10
+  True negative: 73
+  True positive: 92
+  False negative: 2
+  False positive: 22
+  Accuracy: 0.873015873015873
+  optimal_threshold: 0.40484513880956763
+  average_precision: 0.8794437299318899
+  oob_score: 0.7871428571428571
+----------------------------------------
+Experiment 12:
+  n_estimators: 100
+  max_depth: 15
+  True negative: 73
+  True positive: 91
+  False negative: 3
+  False positive: 22
+  Accuracy: 0.8677248677248677
+  optimal_threshold: 0.41
+  average_precision: 0.8923709764826419
+  oob_score: 0.8042857142857143
+----------------------------------------
+Experiment 13:
+  n_estimators: 150
+  max_depth: None
+  True negative: 72
+  True positive: 92
+  False negative: 2
+  False positive: 23
+  Accuracy: 0.8677248677248677
+  optimal_threshold: 0.4066666666666667
+  average_precision: 0.887567910751436
+  oob_score: 0.8071428571428572
+----------------------------------------
+Experiment 14:
+  n_estimators: 150
+  max_depth: 5
+  True negative: 72
+  True positive: 90
+  False negative: 4
+  False positive: 23
+  Accuracy: 0.8571428571428571
+  optimal_threshold: 0.3993704216802241
+  average_precision: 0.8710140385448317
+  oob_score: 0.7957142857142857
+----------------------------------------
+Experiment 15:
+  n_estimators: 150
+  max_depth: 10
+  True negative: 71
+  True positive: 93
+  False negative: 1
+  False positive: 24
+  Accuracy: 0.8677248677248677
+  optimal_threshold: 0.3696410243592675
+  average_precision: 0.884754920891001
+  oob_score: 0.8014285714285714
+----------------------------------------
+Experiment 16:
+  n_estimators: 150
+  max_depth: 15
+  True negative: 72
+  True positive: 92
+  False negative: 2
+  False positive: 23
+  Accuracy: 0.8677248677248677
+  optimal_threshold: 0.4066666666666667
+  average_precision: 0.8868367340961654
+  oob_score: 0.8142857142857143
+----------------------------------------
