@@ -1,0 +1,47 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - {name: Teff, datatype: float64}
+# - {name: logg, datatype: float64}
+# - {name: FeH, datatype: float64}
+# - {name: profile, datatype: string}
+# - {name: filter, datatype: string}
+# - {name: wave_min, datatype: float16}
+# - {name: wave_eff, datatype: float16}
+# - {name: wave_max, datatype: float16}
+# - {name: c1, datatype: float64}
+# - {name: e1, datatype: float64}
+# - {name: c2, datatype: float64}
+# - {name: e2, datatype: float64}
+# schema: astropy-2.0
+Teff logg FeH profile filter wave_min wave_eff wave_max c1 e1 c2 e2
+3500.0 5.0 0.0 quadratic TESS_TESS.Red 0.594 0.602 0.61 0.357 0.018 0.395 0.024
+3500.0 5.0 0.0 quadratic TESS_TESS.Red 0.611 0.619 0.627 0.402 0.013 0.34 0.017
+3500.0 5.0 0.0 quadratic TESS_TESS.Red 0.628 0.636 0.644 0.404 0.012 0.338 0.016
+3500.0 5.0 0.0 quadratic TESS_TESS.Red 0.645 0.653 0.661 0.386 0.013 0.334 0.017
+3500.0 5.0 0.0 quadratic TESS_TESS.Red 0.662 0.67 0.678 0.461 0.006 0.234 0.008
+3500.0 5.0 0.0 quadratic TESS_TESS.Red 0.679 0.687 0.695 0.461 0.005 0.209 0.007
+3500.0 5.0 0.0 quadratic TESS_TESS.Red 0.696 0.704 0.712 0.339 0.014 0.324 0.019
+3500.0 5.0 0.0 quadratic TESS_TESS.Red 0.713 0.721 0.729 0.428 0.006 0.183 0.008
+3500.0 5.0 0.0 quadratic TESS_TESS.Red 0.73 0.738 0.746 0.278 0.018 0.362 0.024
+3500.0 5.0 0.0 quadratic TESS_TESS.Red 0.747 0.755 0.763 0.209 0.024 0.39 0.031
+3500.0 5.0 0.0 quadratic TESS_TESS.Red 0.764 0.772 0.78 0.343 0.011 0.277 0.015
+3500.0 5.0 0.0 quadratic TESS_TESS.Red 0.781 0.789 0.797 0.377 0.008 0.252 0.01
+3500.0 5.0 0.0 quadratic TESS_TESS.Red 0.798 0.806 0.814 0.259 0.017 0.358 0.023
+3500.0 5.0 0.0 quadratic TESS_TESS.Red 0.815 0.823 0.831 0.177 0.024 0.376 0.031
+3500.0 5.0 0.0 quadratic TESS_TESS.Red 0.832 0.84 0.848 0.244 0.017 0.331 0.023
+3500.0 5.0 0.0 quadratic TESS_TESS.Red 0.849 0.857 0.865 0.306 0.012 0.297 0.015
+3500.0 5.0 0.0 quadratic TESS_TESS.Red 0.866 0.874 0.882 0.185 0.022 0.367 0.029
+3500.0 5.0 0.0 quadratic TESS_TESS.Red 0.883 0.891 0.899 0.151 0.024 0.36 0.031
+3500.0 5.0 0.0 quadratic TESS_TESS.Red 0.9 0.908 0.916 0.136 0.023 0.343 0.031
+3500.0 5.0 0.0 quadratic TESS_TESS.Red 0.917 0.925 0.933 0.165 0.022 0.367 0.03
+3500.0 5.0 0.0 quadratic TESS_TESS.Red 0.934 0.942 0.95 0.172 0.022 0.369 0.029
+3500.0 5.0 0.0 quadratic TESS_TESS.Red 0.951 0.959 0.967 0.139 0.023 0.352 0.031
+3500.0 5.0 0.0 quadratic TESS_TESS.Red 0.968 0.976 0.984 0.123 0.023 0.328 0.03
+3500.0 5.0 0.0 quadratic TESS_TESS.Red 0.985 0.993 1.001 0.117 0.022 0.314 0.029
+3500.0 5.0 0.0 quadratic TESS_TESS.Red 1.002 1.01 1.018 0.114 0.022 0.309 0.029
+3500.0 5.0 0.0 quadratic TESS_TESS.Red 1.019 1.027 1.035 0.113 0.022 0.321 0.03
+3500.0 5.0 0.0 quadratic TESS_TESS.Red 1.036 1.044 1.052 0.111 0.022 0.318 0.03
+3500.0 5.0 0.0 quadratic TESS_TESS.Red 1.053 1.061 1.069 0.108 0.022 0.307 0.029
+3500.0 5.0 0.0 quadratic TESS_TESS.Red 1.07 1.078 1.086 0.105 0.021 0.295 0.028
+3500.0 5.0 0.0 quadratic TESS_TESS.Red 1.087 1.095 1.103 0.102 0.02 0.288 0.027
