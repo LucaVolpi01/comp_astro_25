@@ -34,26 +34,23 @@ def transit(args, planet_name):
     
     m = batman.TransitModel(params, t)	        #initializes model    
     flux_normal = m.light_curve(params)
-    
+  
     params.rp = params.rp *2
 
     m = batman.TransitModel(params, t)	        #initializes model    
     flux_double = m.light_curve(params)
 
-    params.rp = params.rp *0.25
+    params.rp = params.rp *0.5
 
     m = batman.TransitModel(params, t)	        #initializes model    
     flux_half = m.light_curve(params)
-
-    
-    
 
 
     #### ######  ###### PLOT ###### ###### ######
     
     plt.figure(figsize=(10, 6))
 
-    plt.title(f"{planet_name}_light_curve.png")
+    plt.title(f"{planet_name}")
     
     plt.grid()
     plt.xlabel("Time [days]")
@@ -66,7 +63,8 @@ def transit(args, planet_name):
     plt.legend()
     
     
-    plt.savefig(f"light_curves/{planet_name}_light_curve.png",dpi=300)
+    #plt.savefig(f"light_curves/{planet_name}_light_curve.png",dpi=300)
+    plt.savefig(f"Assigment2_taskC.png",dpi=300)
     plt.show()
 
 
