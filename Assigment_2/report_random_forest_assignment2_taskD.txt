@@ -66,7 +66,7 @@ Experiment 6:
   False negative: 6
   False positive: 22
   Accuracy: 0.8518518518518519
-  optimal_threshold: 0.4275830130564591
+  optimal_threshold: 0.42758301305645907
   average_precision: 0.8743611334207904
   oob_score: 0.7857142857142857
 ----------------------------------------
@@ -126,7 +126,7 @@ Experiment 11:
   False negative: 2
   False positive: 22
   Accuracy: 0.873015873015873
-  optimal_threshold: 0.40484513880956763
+  optimal_threshold: 0.4048451388095677
   average_precision: 0.8794437299318899
   oob_score: 0.7871428571428571
 ----------------------------------------
@@ -162,7 +162,7 @@ Experiment 14:
   False negative: 4
   False positive: 23
   Accuracy: 0.8571428571428571
-  optimal_threshold: 0.3993704216802241
+  optimal_threshold: 0.39937042168022424
   average_precision: 0.8710140385448317
   oob_score: 0.7957142857142857
 ----------------------------------------
@@ -174,7 +174,7 @@ Experiment 15:
   False negative: 1
   False positive: 24
   Accuracy: 0.8677248677248677
-  optimal_threshold: 0.3696410243592675
+  optimal_threshold: 0.36964102435926743
   average_precision: 0.884754920891001
   oob_score: 0.8014285714285714
 ----------------------------------------

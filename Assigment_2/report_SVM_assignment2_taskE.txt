@@ -1,0 +1,11 @@
+Best parameter Support Vector Machine
+----------------------------------------
+kernel: rbf
+C: 425
+gamma: 0.05
+Confusion matrix: True negative: 71
+Confusion matrix: True positive: 51
+Confusion matrix: False negative: 43
+Confusion matrix: False positive: 24
+Accuracy: 0.6455026455026455
+----------------------------------------
