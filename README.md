@@ -43,7 +43,7 @@ daneel -i <input_file> [options]
 - `-i, --input`: Input parameter file (required)
 - `-d, --detect`: Initialize detection algorithms for exoplanets
 - `-a, --atmosphere`: Atmospheric characterization from input transmission spectrum
-- `-dt, --machine learning algorithms`: Fitting the data using various Algorithms
+- `-dt, --machine learning algorithms`: Fitting the data using various Algorithms and Neural Networks
 
 ### Examples
 
@@ -60,8 +60,11 @@ daneel -i parameter_TOI-2322_b.yaml -t
 # Run both detection and atmospheric analysis
 daneel -i parameters.yaml -d -a
 
-# Run the Random Forest Algorithm
+# Run the data with Random Forest Algorithm
 daneel -i rf_params.yaml -dt rf
+
+# Run the data with CNN
+daneel -i rf_params.yaml -dt cnn
 
 ```
 
