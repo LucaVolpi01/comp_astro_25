@@ -12,8 +12,7 @@ def transit(args, planet_name):
 
     star_name = planet_name[:-2]
    # comp_astro_25/src/daneel/parameters/limb_dark_data/ldc_result_TOI-2322.csv
-    #limb_dark_data = np.genfromtxt(f"/ca25/comp_astro_25/src/daneel/parameters/limb_dark_data/ldc_result_{star_name}.csv")
-    limb_dark_data = np.genfromtxt("C:/Users/HP/OneDrive/Documents/ca25/ext_volume/ldc_result.csv", skip_header=17)
+    limb_dark_data = np.genfromtxt(f"/ca25/comp_astro_25/src/daneel/parameters/limb_dark_data/ldc_result_{star_name}.csv")
     
     u1 = np.mean(limb_dark_data[1:, 8])
     u2 = np.mean(limb_dark_data[1:, 10])

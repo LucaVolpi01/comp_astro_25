@@ -4,7 +4,7 @@ from daneel.parameters import Parameters
 from daneel.detection import *
 from daneel.detection import transit_method
 from daneel.detection import random_forest
-
+from daneel.detection import cnn
 
 def main():
     parser = argparse.ArgumentParser()
@@ -71,6 +71,8 @@ def main():
         transit_method.transit(input_pars)
     if args.dt_algorithm == "rf":
         random_forest.rf_main(input_pars)
+    if args.dt_algorithm == "cnn":
+        cnn.cnn_main(input_pars)
 
     finish = datetime.datetime.now()
     print(f"Daneel finishes at {finish}")
