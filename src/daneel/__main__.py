@@ -3,6 +3,7 @@ import argparse
 from daneel.parameters import Parameters
 from daneel.detection import *
 from daneel.detection import transit_method
+from daneel.detection import random_forest
 
 
 def main():
@@ -41,9 +42,17 @@ def main():
         dest="transit",
         required=False,
         help="test transit",
-        action='store_const',
-        default=transit_method.transit,
-		const=transit_method.transit,
+        action='store_true',
+    )
+
+    parser.add_argument(
+        "-dt",
+        "--detection",
+        dest="dt_algorithm",
+        type=str,
+        required=False,
+        help="Initialise detection algorithms for Exoplanets",
+        #action="store_true",
     )
 
     args = parser.parse_args()
@@ -60,6 +69,8 @@ def main():
         pass
     if args.transit:
         transit_method.transit(input_pars)
+    if args.dt_algorithm == "rf":
+        random_forest.rf_main(input_pars)
 
     finish = datetime.datetime.now()
     print(f"Daneel finishes at {finish}")
