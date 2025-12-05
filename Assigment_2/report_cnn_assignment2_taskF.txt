@@ -1,0 +1,32 @@
+============================================================
+
+- Config1: Default (64-128-256 conv, 512-256-128 dense)
+- Config2: (32-64-128 conv, larger kernels, 256 dense)
+- Config3: (4 conv blocks, lower learning rate)
+- Config4: High dropout (0.5), smaller dense head (128, 64)
+
+--------------------------------------------------
+Config 1: Config1_default
+  Threshold: 0.3237
+  Confusion Matrix: [[ 78,  17], [  9,  85]]
+  Precision: 0.8333
+  TP=85, FP=17, FN=9, TN=78
+
+Config 2: Config2
+  Threshold: 0.4735
+  Confusion Matrix: [[ 82,  13], [ 19,  75]]
+  Precision: 0.8523
+  TP=75, FP=13, FN=19, TN=82
+
+Config 3: Config3
+  Threshold: 0.2366
+  Confusion Matrix: [[ 77,  18], [ 11,  83]]
+  Precision: 0.8218
+  TP=83, FP=18, FN=11, TN=77
+
+Config 4: Config4
+  Threshold: 0.5505
+  Confusion Matrix: [[ 79,  16], [ 19,  75]]
+  Precision: 0.8242
+  TP=75, FP=16, FN=19, TN=79
+
