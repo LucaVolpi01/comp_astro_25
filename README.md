@@ -66,6 +66,9 @@ daneel -i rf_params.yaml -dt rf
 # Run the data with CNN
 daneel -i rf_params.yaml -dt cnn
 
+# Run the GAN method in the daneel.dream folder
+daneel -i dream_params.yaml -dream
+
 ```
 
 ## Input File Format

@@ -199,7 +199,6 @@ def plot_confusion_matrix_image(y_true, y_pred, threshold, save_path='confusion_
     print(f"Saved: {save_path}")
     plt.close(fig)
 
-
 def plot_roc_curve(y_true, proba, save_path='roc_curve_rf.png'):
     fpr, tpr, _ = roc_curve(y_true, proba)
     auc = roc_auc_score(y_true, proba)
@@ -216,7 +215,6 @@ def plot_roc_curve(y_true, proba, save_path='roc_curve_rf.png'):
     print(f"Saved: {save_path}")
     plt.close(fig)
 
-
 def plot_pr_curve(y_true, proba, save_path='pr_curve_rf.png'):
     precision, recall, _ = precision_recall_curve(y_true, proba)
     ap = average_precision_score(y_true, proba)
@@ -232,7 +230,6 @@ def plot_pr_curve(y_true, proba, save_path='pr_curve_rf.png'):
     print(f"Saved: {save_path}")
     plt.close(fig)
 
-
 def plot_probability_histograms(y_true, proba, save_path='probability_hist_RF.png'):
     fig = plt.figure(figsize=(6, 5))
     ax = plt.gca()
@@ -247,7 +244,6 @@ def plot_probability_histograms(y_true, proba, save_path='probability_hist_RF.pn
     plt.savefig(save_path, dpi=300)
     print(f"Saved: {save_path}")
     plt.close(fig)
-
 
 def plot_lightcurve_sample(idx, X_test_standardized, X_err_test, metadata_test, scaler=None, proba=None, y_true=None, y_pred=None, save_prefix='sample_lightcurve_RF'):
     # Make a single-figure plot for one sample (no subplots)
@@ -290,7 +286,7 @@ def plot_lightcurve_sample(idx, X_test_standardized, X_err_test, metadata_test, 
 
 def rf_main(args):
 
-    CSV_PATH = args['dataset']    # C:/Users/HP/OneDrive/Documents/ca25/ext_volume/tess_data.csv
+    CSV_PATH = args['dataset'] 
 
     X_train, X_test, y_train, y_test, metadata_test, X_test_std_copy, X_err_test, scaler = load_data(
         csv_path=CSV_PATH, n_bins=N_BINS, use_scaler=USE_SCALER, samples_per_class=SAMPLES_PER_CLASS
@@ -319,6 +315,6 @@ def rf_main(args):
     plot_confusion_matrix_image(y_test, y_pred_opt, best_thresh, save_path='confusion_matrix_rf.png')
     plot_roc_curve(y_test, proba_test, save_path='roc_curve_rf.png')
     plot_pr_curve(y_test, proba_test, save_path='pr_curve_rf.png')
-    plot_probability_histograms(y_test, proba_test, save_path='probability_hist_RF.png')
+    plot_probability_histograms(y_test, proba_test, save_path='probability_hist_rf.png')
 
     

@@ -5,6 +5,7 @@ from daneel.detection import *
 from daneel.detection import transit_method
 from daneel.detection import random_forest
 from daneel.detection import cnn
+from daneel.dream import GAN
 
 def main():
     parser = argparse.ArgumentParser()
@@ -55,6 +56,15 @@ def main():
         #action="store_true",
     )
 
+    parser.add_argument(
+        "-dream",
+        "--dream",
+        dest="dream",
+        required=False,
+        help="Calls the GAN to check the light curve images created from the TESS data file",
+        action="store_true",
+    )
+
     args = parser.parse_args()
 
     """Launch Daneel"""
@@ -73,6 +83,8 @@ def main():
         random_forest.rf_main(input_pars)
     if args.dt_algorithm == "cnn":
         cnn.cnn_main(input_pars)
+    if args.dream:
+        GAN.GAN_main(input_pars)
 
     finish = datetime.datetime.now()
     print(f"Daneel finishes at {finish}")
