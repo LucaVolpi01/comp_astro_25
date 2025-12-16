@@ -1,0 +1,76 @@
+[Global]
+xsec_path = /ca25/comp_astro_25/src/daneel/parameters/xsecs/
+cia_path = /ca25/comp_astro_25/src/daneel/parameters/cia/hitran/
+mpi_use_shared = True
+
+[Chemistry]
+chemistry_type = taurex
+fill_gases = H2,He
+ratio = 0.25
+
+[[H2O]]
+gas_type = constant
+mix_ratio=3.12e-6
+
+[[CH4]]
+gas_type = constant
+mix_ratio=2.51e-2
+
+[[CO2]]
+gas_type = constant
+mix_ratio=9.29e-3
+
+[[CO]]
+gas_type = constant
+mix_ratio=3.5e-5
+
+
+[Temperature]
+profile_type = isothermal
+T = 513
+
+[Pressure]
+profile_type = Simple
+atm_min_pressure = 1e-4
+atm_max_pressure = 1e6
+nlayers = 100
+
+[Planet]
+planet_type = Simple
+planet_mass = 0.01466
+planet_radius = 0.165
+
+[Star]
+star_type = blackbody
+temperature = 3709
+
+[Model]
+model_type = transmission
+
+    [[Absorption]]
+
+    [[CIA]]
+    cia_pairs = H2-H2, H2-He
+
+    [[Rayleigh]]
+
+[Optimizer]
+num_live_points = 1000
+optimizer = multinest
+search_multi_modes = False
+multi_nest_path = ./multinest
+
+
+[Output]
+output_dir = /ca25/comp_astro_25/Assigment_3/TOI-776_b/outputs
+spectrum_output = TOI-776_b_assignment3_tasKB_spectrum.dat
+
+[Fitting]
+planet_radius:fit = True
+planet_radius:bounds = 0.3, 2
+
+T:fit = True
+T:bounds = 300, 2000
+
+H2O:fit = True
+H2O:bounds = 1e-12, 1e-1
