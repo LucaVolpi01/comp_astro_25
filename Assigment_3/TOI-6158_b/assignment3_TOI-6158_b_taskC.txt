@@ -1,0 +1,40 @@
+ASSIGNMENT 3 – TASK C
+
+FIXED PARAMETERS
+----------------
+
+[Chemistry]
+
+[[CH4]]
+gas_type = constant
+mix_ratio=8.11e-6
+
+[[CO2]]
+gas_type = constant
+mix_ratio=2.39e-4
+
+[[CO]]
+gas_type = constant
+mix_ratio=7.56e-4
+
+[Pressure]
+atm_min_pressure = 1e-4
+atm_max_pressure = 1e6
+nlayers = 100
+
+[Planet]
+planet_mass = 0.425 [M_S]
+
+[Star]
+temperature = 3467 [K]
+
+
+RETRIEVED PARAMETERS
+--------------------
+
+Param              Value  Type        Arg                       Result
+-------------  ---------  ----------  -----------------------  -------------- 
+planet_radius  0.93      Uniform     Bounds = [0.5,1.5]        0.93 +- 0.00
+T              636       Uniform     Bounds = [300.0,1000.0]   635.76 +- 0.00
+log_H2O        -2.32606  LogUniform  Bounds = [-10.0,-2.0]     -2.32 +- 0.00
+
