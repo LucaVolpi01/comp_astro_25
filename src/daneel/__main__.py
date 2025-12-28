@@ -2,14 +2,10 @@ import datetime
 import argparse
 from daneel.parameters import Parameters
 from daneel.detection import *
-from daneel.detection import transit_method
-from daneel.detection import random_forest
-from daneel.detection import cnn
-from daneel.dream import GAN
 
 def main():
     parser = argparse.ArgumentParser()
-
+    
     parser.add_argument(
         "-i",
         "--input",
@@ -33,9 +29,10 @@ def main():
         "--atmosphere",
         dest="atmosphere",
         required=False,
-        help="Atmospheric Characterisazion from input transmission spectrum",
-        action="store_true",
+        help="Atmospheric action to run",
+        type=str,              
     )
+
 
     parser.add_argument(
         "-t",
@@ -53,7 +50,7 @@ def main():
         type=str,
         required=False,
         help="Initialise detection algorithms for Exoplanets",
-        #action="store_true",
+    #    action="store_true",
     )
 
     parser.add_argument(
@@ -65,29 +62,57 @@ def main():
         action="store_true",
     )
 
+
     args = parser.parse_args()
+
 
     """Launch Daneel"""
     start = datetime.datetime.now()
     print(f"Daneel starts at {start}")
-
-    input_pars = Parameters(args.input_file).params
+       
 
     if args.detect:
         pass
-    if args.atmosphere:
-        pass
+    
+    if args.atmosphere == "model":
+        from daneel.atmosphere import model
+        print("##############  MODEL  ###################")
+        model.main(args.input_file)
+        
+    if args.atmosphere == "retrieve":
+        from daneel.atmosphere import model
+        from daneel.atmosphere import retrieval
+        print("##############  RETRIEVE  ###################")
+        model.main(args.input_file)
+        retrieval.main(args.input_file)
+        
     if args.transit:
+        from daneel.detection import transit_method
+
+        print("##############  TRANSIT  ###################")
+        input_pars = Parameters(args.input_file).params
         transit_method.transit(input_pars)
+        
     if args.dt_algorithm == "rf":
+        from daneel.detection import random_forest
+        print("##############  RANDOM FOREST  ###################")
+        input_pars = Parameters(args.input_file).params
         random_forest.rf_main(input_pars)
+        
     if args.dt_algorithm == "cnn":
+        from daneel.detection import cnn
+        print("##############  CNN  ###################")
+        input_pars = Parameters(args.input_file).params
         cnn.cnn_main(input_pars)
+        
     if args.dream:
+        from daneel.dream import GAN
+        print("##############  GAN  ###################")
+        input_pars = Parameters(args.input_file).params
         GAN.GAN_main(input_pars)
 
     finish = datetime.datetime.now()
-    print(f"Daneel finishes at {finish}")
+    print(f"Total runtime: {finish - start}")
 
 
 if __name__ == "__main__":
