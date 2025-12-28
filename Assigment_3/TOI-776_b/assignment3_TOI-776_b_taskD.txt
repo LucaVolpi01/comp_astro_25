@@ -1,0 +1,33 @@
+ASSIGNMENT 3 – TASK D
+
+FIXED PARAMETERS
+----------------
+ -- Planet --
+planet_mass = 0.01466 [M_S]
+planet_radius = 0.165 [R_S]
+
+-- Star --
+star_type = blackbody
+temperature = 3709 [K]
+
+-- CH4 --
+gas_type = constant
+mix_ratio=2.51e-2
+
+-- CO2 --
+gas_type = constant
+mix_ratio=9.29e-3
+
+-- CO --
+gas_type = constant
+mix_ratio=3.5e-5
+
+RETRIEVED PARAMETERS
+--------------------
+-- bounds --
+planet_radius = 0.17 +- 0.0 [R_S]
+T  = 510.96 +- 0.01 [K]
+log(H2O)  = -5.58 +- 0.0
+
+
+
